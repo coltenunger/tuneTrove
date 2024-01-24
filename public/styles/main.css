@@ -1,0 +1,67 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+
+  :root {
+      --bg-body: #E2E1D1;
+      --bg-nav: #D3D1B9;
+      --bg-dark: #151F24;
+      --text-color: #E82339;
+  }
+
+  body {
+      /* height: 100vh; */
+      /* width: 100vw; */
+      margin: 0;
+      overflow: hidden;
+  }
+
+  .background-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-dark);
+      z-index: 1;
+  }
+
+  .foreground-container {
+      position: absolute;
+      top: 5rem;
+      left: 2rem;
+      right: 2rem;
+      bottom: 1rem;
+      background-color: var(--bg-body);
+      border-radius: 30px;
+      overflow: auto;
+      filter: drop-shadow(0px 12px 26.2px black);
+      z-index: 2;
+  }
+
+  .foreground-container::-webkit-scrollbar {
+      width: 0;
+  }
+
+  .foreground-container a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  .line {
+      border-bottom: 1px solid rgb(171, 171, 171);
+      width: 100px;
+  }
+
+  .artwork {
+      width: 200px;
+      height: 200px;
+  }
+
+
+  footer {
+      position: absolute;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      right: 3.5rem;
+      bottom: 2rem;
+      z-index: 4;
+  }

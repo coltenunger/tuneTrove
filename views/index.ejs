@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs'); -%>
+
+    <div class="background-container"></div>
+    <div class="foreground-container">
+        <div class="p-4 m-2 row gap-5">
+            <% if (albumCover && albumCover.length> 0) { %>
+
+                <% albumCover.forEach(function(imageURL, index) { %>
+                    <a href="/album-details?albumId=<%=albumDetails.id[index] %>" class="d-flex">
+                        <img height="200px" src="<%=imageURL %>" alt="">
+                        <div class="px-4" style="font-family: 'IBM Plex Sans', sans-serif;">
+                            <h3 class="fw-bold">
+                                <%= albumDetails.title[index] %>
+                            </h3>
+                            <h5 style="color: var(--text-color);">
+                                <%= albumDetails.artist[index] %>
+                            </h5>
+                            <p class=" fw-normal">
+                                <%= albumDetails.genre[index] %>
+                            </p>
+                        </div>
+                    </a>
+                    <div class="line"></div>
+                    <% }); %>
+                        <% } else { %>
+                            <p>No artwork found</p>
+                            <% } %> %>
+        </div>
+    </div>
+
+    <%- include('partials/footer.ejs'); -%>

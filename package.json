@@ -1,0 +1,18 @@
+{
+  "name": "tune-trove",
+  "version": "1.0.0",
+  "description": "A web app that displays detailed information about my favorite albums",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coltenunger",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}

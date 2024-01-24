@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs'); -%>
+
+    <div class="background-container"></div>
+    <div class="foreground-container">
+
+        <div class="p-4 m-2 row gap-4">
+            <div class="d-flex">
+
+                <img height="200px" src="<%=albumDetails.coverImage %>" alt="">
+                <div class="px-4" style="font-family: 'IBM Plex Sans', sans-serif;">
+                    <h3 class="fw-bold">
+                        <%= albumDetails.title %>
+                    </h3>
+                    <h5 style="color: var(--text-color);">
+                        <%= albumDetails.artist %>
+                    </h5>
+                    <p class=" fw-normal">
+                        <%= albumDetails.genre %>
+                    </p>
+                </div>
+
+            </div>
+            <div class="line"></div>
+            <p class="fs-6" style="font-family: 'IBM Plex Sans', sans-serif;">
+                <strong>Review goes here:</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Quis lectus nulla at volutpat. Aliquam id diam maecenas ultricies mi eget mauris
+                pharetra. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Egestas congue quisque
+                egestas diam in arcu cursus euismod. Est ultricies integer quis auctor elit. Dictum sit amet justo donec
+                enim diam vulputate ut pharetra. Sit amet commodo nulla facilisi nullam vehicula ipsum. Lacus laoreet
+                non curabitur gravida arcu. Elit sed vulputate mi sit amet mauris commodo. Diam ut venenatis tellus in
+                metus. Vel orci porta non pulvinar neque laoreet. Blandit massa enim nec dui nunc mattis enim ut tellus.
+                Nulla facilisi morbi tempus iaculis urna id. Parturient montes nascetur ridiculus mus mauris. Dictumst
+                quisque sagittis purus sit amet. Ut venenatis tellus in metus vulputate. Interdum posuere lorem ipsum
+                dolor. Arcu risus quis varius quam quisque.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Quis lectus nulla at volutpat. Aliquam id diam maecenas ultricies mi eget mauris
+                pharetra. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Egestas congue quisque
+                egestas diam in arcu cursus euismod. Est ultricies integer quis auctor elit. Dictum sit amet justo donec
+                enim diam vulputate ut pharetra. Sit amet commodo nulla facilisi nullam vehicula ipsum. Lacus laoreet
+                non curabitur gravida arcu. Elit sed vulputate mi sit amet mauris commodo.
+            </p>
+            <div class="line"></div>
+        </div>
+
+    </div>
+
+    <%- include('partials/footer.ejs'); -%>
